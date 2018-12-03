@@ -1,0 +1,11 @@
+language: java
+sudo: true
+before_install:
+install: true
+script: ./build.sh
+matrix:
+  include:
+  - jdk: oraclejdk9
+cache:
+  directories:
+  - $HOME/.m2
